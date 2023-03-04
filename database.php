@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "***";
-$password = "****";
-$dbname = "****";
+$username = "iandroid_admin";
+$password = "3472004jabab";
+$dbname = "iandroid_bl";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

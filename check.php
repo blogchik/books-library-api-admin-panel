@@ -20,7 +20,7 @@ function upd_ver(){
 
 if($_SESSION['user'] == null){
 
-    header("Location: ../logout");
+    header('Location: ../logout');
 
 }
 
@@ -29,7 +29,7 @@ $check_login = $conn->query("SELECT * FROM login WHERE login = '$login_user'");
 
 if($check_login->num_rows <= 0){
 
-    header("Location: ../logout");
+    header('Location: ../logout');
 
 }
 
