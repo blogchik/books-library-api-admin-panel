@@ -27,7 +27,7 @@ if($_POST != null){
         
         $ver = upd_ver();
 
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/page_photo_arabic-$page_id." . $imageFileType . "?ver=$ver";
+        $photo_url = "https://iandroid.uz/bl/photos/page_photo_arabic-$page_id." . $imageFileType . "?ver=$ver";
 
         $conn->query("UPDATE pages SET page_photo_arabic = '$photo_url' WHERE id = '$page_id'");
 
@@ -44,7 +44,7 @@ if($_POST != null){
 
         $ver = upd_ver();
         
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/page_photo_handw-$page_id." . $imageFileType . "?ver=$ver";
+        $photo_url = "https://iandroid.uz/bl/photos/page_photo_handw-$page_id." . $imageFileType . "?ver=$ver";
 
         $conn->query("UPDATE pages SET page_photo_handw = '$photo_url' WHERE id = '$page_id'");
 
@@ -61,7 +61,7 @@ if($_POST != null){
 
         $ver = upd_ver();
         
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/page_photo_uzbek-$page_id." . $imageFileType . "?ver=$ver";
+        $photo_url = "https://iandroid.uz/bl/photos/page_photo_uzbek-$page_id." . $imageFileType . "?ver=$ver";
 
         $conn->query("UPDATE pages SET page_photo_uzbek = '$photo_url' WHERE id = '$page_id'");
 
@@ -78,7 +78,7 @@ if($_POST != null){
 
         $ver = upd_ver();
         
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/page_photo_transc-$page_id." . $imageFileType . "?ver=$ver";
+        $photo_url = "https://iandroid.uz/bl/photos/page_photo_transc-$page_id." . $imageFileType . "?ver=$ver";
 
         $conn->query("UPDATE pages SET page_photo_transc = '$photo_url' WHERE id = '$page_id'");
 
@@ -95,7 +95,7 @@ if($_POST != null){
 
         $ver = upd_ver();
         
-        $audio_url = "https://blogchik-bots.uz/api/books-library/audio/page_audio_1-$page_id." . $FileType . "?ver=$ver";
+        $audio_url = "https://iandroid.uz/bl/audio/page_audio_1-$page_id." . $FileType . "?ver=$ver";
 
         $conn->query("UPDATE pages SET page_audio1 = '$audio_url' WHERE id = '$page_id'");
 
@@ -112,7 +112,7 @@ if($_POST != null){
 
         $ver = upd_ver();
         
-        $audio_url = "https://blogchik-bots.uz/api/books-library/audio/page_audio_2-$page_id." . $FileType . "?ver=$ver";
+        $audio_url = "https://iandroid.uz/bl/audio/page_audio_2-$page_id." . $FileType . "?ver=$ver";
 
         $conn->query("UPDATE pages SET page_audio2 = '$audio_url' WHERE id = '$page_id'");
 

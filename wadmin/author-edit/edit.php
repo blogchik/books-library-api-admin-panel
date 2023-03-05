@@ -50,7 +50,7 @@ if($_POST != null){
 
         $ver = upd_ver();
         
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/author-$author_id." . $imageFileType . "?ver=$ver";
+        $photo_url = "https://iandroid.uz/bl/photos/author-$author_id." . $imageFileType . "?ver=$ver";
 
         $conn->query("UPDATE authors SET photo = '$photo_url' WHERE id = '$author_id'");
 

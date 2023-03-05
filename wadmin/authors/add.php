@@ -31,7 +31,7 @@ if($_POST != null){
         $target_file = $target_dir . basename($_FILES["photo"]["name"]);
         $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
         move_uploaded_file($_FILES["photo"]["tmp_name"], "../../photos/author-$author_id." . $imageFileType);
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/author-$author_id." . $imageFileType;
+        $photo_url = "https://iandroid.uz/bl/photos/author-$author_id." . $imageFileType;
 
         $conn->query("UPDATE authors SET photo = '$photo_url' WHERE id = '$author_id'");
 

@@ -73,7 +73,7 @@ if($_POST != null){
 
         move_uploaded_file($_FILES["cover"]["tmp_name"], "../../photos/bcover-$book_id." . $imageFileType);
         
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/bcover-$book_id." . $imageFileType;
+        $photo_url = "https://iandroid.uz/bl/photos/bcover-$book_id." . $imageFileType;
 
         $conn->query("UPDATE books SET book_cover = '$photo_url' WHERE id = '$book_id'");
 

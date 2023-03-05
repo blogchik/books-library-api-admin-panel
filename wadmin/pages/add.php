@@ -20,7 +20,7 @@ if($_POST != null){
 
         move_uploaded_file($_FILES["page_photo_arabic"]["tmp_name"], "../../photos/page_photo_arabic-$page_id." . $imageFileType);
         
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/page_photo_arabic-$page_id." . $imageFileType;
+        $photo_url = "https://iandroid.uz/bl/photos/page_photo_arabic-$page_id." . $imageFileType;
 
         $conn->query("UPDATE pages SET page_photo_arabic = '$photo_url' WHERE id = '$page_id'");
 
@@ -35,7 +35,7 @@ if($_POST != null){
 
         move_uploaded_file($_FILES["page_photo_handw"]["tmp_name"], "../../photos/page_photo_handw-$page_id." . $imageFileType);
         
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/page_photo_handw-$page_id." . $imageFileType;
+        $photo_url = "https://iandroid.uz/bl/photos/page_photo_handw-$page_id." . $imageFileType;
 
         $conn->query("UPDATE pages SET page_photo_handw = '$photo_url' WHERE id = '$page_id'");
 
@@ -50,7 +50,7 @@ if($_POST != null){
 
         move_uploaded_file($_FILES["page_photo_uzbek"]["tmp_name"], "../../photos/page_photo_uzbek-$page_id." . $imageFileType);
         
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/page_photo_uzbek-$page_id." . $imageFileType;
+        $photo_url = "https://iandroid.uz/bl/photos/page_photo_uzbek-$page_id." . $imageFileType;
 
         $conn->query("UPDATE pages SET page_photo_uzbek = '$photo_url' WHERE id = '$page_id'");
 
@@ -65,7 +65,7 @@ if($_POST != null){
 
         move_uploaded_file($_FILES["page_photo_transc"]["tmp_name"], "../../photos/page_photo_transc-$page_id." . $imageFileType);
         
-        $photo_url = "https://blogchik-bots.uz/api/books-library/photos/page_photo_transc-$page_id." . $imageFileType;
+        $photo_url = "https://iandroid.uz/bl/photos/page_photo_transc-$page_id." . $imageFileType;
 
         $conn->query("UPDATE pages SET page_photo_transc = '$photo_url' WHERE id = '$page_id'");
 
@@ -80,7 +80,7 @@ if($_POST != null){
 
         move_uploaded_file($_FILES["page_audio_1"]["tmp_name"], "../../audio/page_audio_1-$page_id." . $FileType);
         
-        $audio_url = "https://blogchik-bots.uz/api/books-library/audio/page_audio_1-$page_id." . $FileType;
+        $audio_url = "https://iandroid.uz/bl/audio/page_audio_1-$page_id." . $FileType;
 
         $conn->query("UPDATE pages SET page_audio1 = '$audio_url' WHERE id = '$page_id'");
 
@@ -95,7 +95,7 @@ if($_POST != null){
 
         move_uploaded_file($_FILES["page_audio_2"]["tmp_name"], "../../audio/page_audio_2-$page_id." . $FileType);
         
-        $audio_url = "https://blogchik-bots.uz/api/books-library/audio/page_audio_2-$page_id." . $FileType;
+        $audio_url = "https://iandroid.uz/bl/audio/page_audio_2-$page_id." . $FileType;
 
         $conn->query("UPDATE pages SET page_audio2 = '$audio_url' WHERE id = '$page_id'");
 
